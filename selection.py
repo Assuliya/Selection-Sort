@@ -1,4 +1,4 @@
-def selection(y,z): #Works if you add an empty list goes in (z)
+def selection(y,z): #Works if you add an empty list (goes where 'z' is)
 	length = len(y)
 	while len(z) != length:
 		x = min(y)
@@ -11,10 +11,15 @@ def selection(y,z): #Works if you add an empty list goes in (z)
 		print y
 		print z
 
+base = []
+copy = [] #an empty list that I use to push all of the sorted numbers
+
+for i in range(100):
+	import random
+	base.append(random.randint(0,10000))
+print base
 
 
-base = [2,5,8,3,1]
-copy = []
 
 
 print selection(base,copy)
